@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/*----GLOBALES---*/
+
+:root {
+  /*globales*/
+  /* --bg: #05001b; */
+  --bg: #04080f;
+  --violet: #5e17eb;
+  /* --violet: #2176ff; */
+  --white: #ffffff;
+  /*iconos*/
+  --html: #e34f26;
+  --css: #2965f1;
+  --js: #f7df1e;
+  --python: #4584b6;
+  --figma: #00a98f;
+  --sass: #cd6799;
+  --bootstrap: #563d7c;
+  --slack: #6ecadc;
+  --git: #4078c0;
+  --mail: #ea4335;
+  --linkedin: #0077b5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background: var(--bg);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.titulo {
+  margin: 10px 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.parrafo {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  line-height: 2.3rem;
+}
+
+.padding-top {
+  padding-top: 60px;
+}
+
+.padding-titulo {
+  padding-top: 20px;
+}
+
+.animacion:hover {
+  background: var(--white);
+  color: var(--violet);
+  cursor: pointer;
+}
+
+/*----HEADER----*/
+
+.header {
+  width: 100%;
+  position: fixed;
+}
+
+.nav {
+  background: var(--bg);
+  max-width: 100%;
+  height: 60px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.nav-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  height: 80%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-logo::before {
+  content: "<";
+}
+
+.nav-logo::after {
+  content: ">";
+}
+
+.nav-logo::before,
+.nav-logo::after {
+  color: var(--violet);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.nav-btn {
+  border: none;
+  background: none;
+  color: var(--white);
+  font-size: inherit;
+  margin-right: 5px;
+}
+
+.nav-btn:hover {
+  cursor: pointer;
+}
+
+.menu {
+  background: var(--bg);
+  position: fixed;
+  top: 55px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.menu-desactivado {
+  left: 100%;
+}
+
+.menu__item {
+  margin: 20px;
+  list-style: none;
+}
+
+.menu__item-link {
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/*----INICIO----*/
+
+.inicio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.perfil-img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: solid 4px var(--violet);
+}
+
+.saludo {
+  margin-top: 20px;
+}
+
+.saludo__texto {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.saludo__texto-color {
+  color: var(--violet);
+}
+
+.saludo-titulo {
+  font-size: 1.6rem;
+}
+
+/*----HABILIDADES----*/
+
+.contenedor-iconos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  padding-top: 40px;
+}
+
+.iconos {
+  font-size: 3.5rem;
+}
+
+.contenedor-iconos-texto {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.habilidades-btn {
+  display: block;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  background: var(--violet);
+  color: var(--white);
+  font-size: 1.2rem;
+  margin: 40px auto;
+  transition: 0.3s;
+}
+
+.icono-descarga {
+  margin-right: 10px;
+}
+
+/*----PORTAFOLIO----*/
+
+.portafolio__galeria {
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.portafolio__galeria-img {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+/*----CONTACTO----*/
+
+.contenedor-iconos-texto {
+  width: max-content;
+  text-align: center;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/*----FOOTER----*/
+
+.footer {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/*COLORES-ICONOS*/
+
+.fa-html5 {
+  color: var(--html);
+}
+
+.fa-css3-alt {
+  color: var(--css);
+}
+
+.fa-js {
+  color: var(--js);
+}
+
+.fa-python {
+  color: var(--python);
+}
+
+.fa-figma {
+  color: var(--figma);
+}
+
+.fa-sass {
+  color: var(--sass);
+}
+
+.fa-bootstrap {
+  color: var(--bootstrap);
+}
+
+.fa-slack {
+  color: var(--slack);
+}
+
+.fa-github {
+  color: var(--git);
+}
+
+.fa-envelope {
+  color: var(--mail);
+}
+
+.fa-linkedin-in {
+  color: var(--linkedin);
+}
