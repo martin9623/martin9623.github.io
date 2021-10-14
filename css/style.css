@@ -1,13 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /*----GLOBALES---*/
 
 :root {
   /*globales*/
-  /* --bg: #05001b; */
-  --bg: #04080f;
-  --violet: #5e17eb;
-  /* --violet: #2176ff; */
+  --bg: #020307;
+  --violet: #2d4886;
   --white: #ffffff;
   /*iconos*/
   --html: #e34f26;
@@ -30,7 +28,7 @@
 }
 
 body {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Ubuntu", sans-serif;
   background: var(--bg);
   color: var(--white);
 }
@@ -85,8 +83,7 @@ a {
 }
 
 .nav-logo {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.8rem;
   height: 80%;
   border-radius: 5px;
   transition: 0.3s;
