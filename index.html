@@ -16,7 +16,7 @@
   <!-- Header -->
   <header class="header">
     <nav class="nav">
-      <a href="#" class="nav-logo animacion">martin</a>
+      <a href="#" class="nav-logo">martin</a>
       <button class="nav-btn">
         <i class="fas fa-bars"></i>
       </button>
@@ -56,7 +56,7 @@
 
   <!-- Sobre-mi -->
 
-  <section class="sobre-mi padding-top" id="sobre-mi">
+  <section class="padding" id="sobre-mi">
     <h2 class="titulo">Sobre mí:</h2>
     <p class="parrafo">
       Pilar, Buenos Aires, Argentina. 📍
@@ -69,7 +69,7 @@
 
   <!-- Habilidades -->
 
-  <section class="habilidades padding-top" id="habilidades">
+  <section class="habilidades padding" id="habilidades">
     <div class="habilidades__contenedor">
       <h2 class="titulo">Habilidades:</h2>
       <p class="parrafo">
@@ -115,11 +115,20 @@
 
   <!-- Portafolio -->
 
-  <section class="portafolio padding-top" id="portafolio">
+  <section class="portafolio padding" id="portafolio">
     <h2 class="titulo">Portafolio</h2>
     <h3 class="parrafo">Últimos proyectos realizados.</h3>
     <div class="portafolio__galeria">
-      <img src="media/ejemplo_portafolio.png" alt="vista previa de portafolio" class="portafolio__galeria-img" />
+      <a class="portafolio__galeria-img portafolio__animacion" href="https://demoestudiojuridico.netlify.app/"
+        target="_blank">
+        <img class="portafolio__galeria-img " src="media/demo_estudio_juridico.png" alt="Pagina demo estudio juridico">
+        <div class="overlay">
+          <p class="overlay__texto">
+            Proyecto desarrollado con: <br>
+            HTML - CSS - JS - SASS
+          </p>
+        </div>
+      </a>
       <img src="media/ejemplo_portafolio.png" alt="vista previa de portafolio" class="portafolio__galeria-img" />
       <img src="media/ejemplo_portafolio.png" alt="vista previa de portafolio" class="portafolio__galeria-img" />
     </div>
@@ -127,7 +136,7 @@
 
   <!-- Contacto -->
 
-  <section class="contacto padding-top" id="contacto">
+  <section class="contacto padding" id="contacto">
     <h2 class="titulo">Contacto</h2>
     <h3 class="parrafo">
       Comencemos un proyecto juntos o sumame a tu equipo de trabajo!
