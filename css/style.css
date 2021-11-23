@@ -11,12 +11,12 @@
   --html: #e34f26;
   --css: #2965f1;
   --js: #f7df1e;
-  --python: #4584b6;
+  --git: #f1502f;
   --figma: #00a98f;
   --sass: #cd6799;
   --bootstrap: #563d7c;
   --slack: #6ecadc;
-  --git: #4078c0;
+  --github: #4078c0;
   --mail: #ea4335;
   --linkedin: #0077b5;
 }
@@ -285,8 +285,8 @@ a {
   color: var(--js);
 }
 
-.fa-python {
-  color: var(--python);
+.fa-git-alt {
+  color: var(--git);
 }
 
 .fa-figma {
@@ -306,7 +306,7 @@ a {
 }
 
 .fa-github {
-  color: var(--git);
+  color: var(--github);
 }
 
 .fa-envelope {
